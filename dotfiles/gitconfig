@@ -10,3 +10,5 @@
   autosetuprebase = always
 [rerere]
   enabled = true
+[push]
+  default = upstream
