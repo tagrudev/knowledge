@@ -1,0 +1,12 @@
+[alias]
+	co = checkout
+	l = log --oneline --decorate --graph
+[user]
+	email = tagrudev@gmail.com
+	name = Todor Grudev
+[github]
+  user = tagrudev
+[branch]
+  autosetuprebase = always
+[rerere]
+  enabled = true
