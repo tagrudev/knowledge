@@ -5,10 +5,14 @@
 	email = tagrudev@gmail.com
 	name = Todor Grudev
 [github]
-  user = tagrudev
+	 user = tagrudev
 [branch]
-  autosetuprebase = always
+  	autosetuprebase = always
 [rerere]
-  enabled = true
+  	enabled = true
 [push]
-  default = upstream
+  	default = upstream
+[commit]
+  	template = ~/.gitmessage
+[core]
+	editor = atom --wait

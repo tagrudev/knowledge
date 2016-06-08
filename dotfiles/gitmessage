@@ -1,0 +1,8 @@
+# Subject in (preferably) less than 50 characters
+This is the subject of this commit message
+# Body in greater detail
+Explain the problem being solved by this commit. More importantly, explain why these
+changes are being made, as opposed to how. The 'why' part is your responsibility,
+the 'how' part is code's responsibility.
+- You can also use bullets like this.
+- Or, like this.
