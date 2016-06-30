@@ -1,0 +1,22 @@
+export ZSH=$HOME/.oh-my-zsh
+
+#theme
+ZSH_THEME="clean"
+
+#plugins
+plugins=(git ruby rails)
+
+#path
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/Postgres.app/Contents/Versions/9.4/bin"
+
+#oh-my-zsh
+source $ZSH/oh-my-zsh.sh
+
+# aliases
+alias gm="git fetch && git rebase origin/master"
+alias gg="git status"
+alias personal="cd ~/Projects/Personal/web"
+alias work="cd ~/Projects/Work"
+
+#rbenv
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
