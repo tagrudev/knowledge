@@ -6,6 +6,7 @@ Some useful stuff I come across to...
 * [Rails](#rails)
 * [Git](#git)
 * [Dotfiles](dotfiles)
+* [Atom](#atom)
 
 ### Unix
 
@@ -14,3 +15,7 @@ Some useful stuff I come across to...
 ### Git
 
 - [Aliases](git/aliases.md)
+
+### Atom
+
+- [Packages](atom/packages.md)

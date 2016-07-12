@@ -1,0 +1,11 @@
+packages: [
+  "atom-beautify"
+  "change-case"
+  "gemsource"
+  "gist-it"
+  "language-cjsx"
+  "multi-cursor"
+  "package-sync"
+  "pigments"
+  "ruby-slim"
+]
