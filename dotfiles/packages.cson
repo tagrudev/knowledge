@@ -1,5 +1,6 @@
 packages: [
   "atom-beautify"
+  "autocomplete-paths"
   "change-case"
   "gemsource"
   "gist-it"
@@ -8,4 +9,6 @@ packages: [
   "package-sync"
   "pigments"
   "ruby-slim"
+  "tablr"
+  "trailing-spaces"
 ]
