@@ -18,5 +18,8 @@ alias gg="git status"
 alias personal="cd ~/Projects/Personal/web"
 alias work="cd ~/Projects/Work"
 
+# Allow [ or ] whereever you want
+unsetopt nomatch
+
 #rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
