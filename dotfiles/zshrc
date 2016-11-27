@@ -7,16 +7,22 @@ ZSH_THEME="clean"
 plugins=(git ruby rails)
 
 #path
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/Postgres.app/Contents/Versions/9.4/bin"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/Postgres.app/Contents/Versions/latest/bin"
+export EDITOR="atom"
 
 #oh-my-zsh
 source $ZSH/oh-my-zsh.sh
+source ~/.bin/tmuxinator.zsh
 
 # aliases
 alias gm="git fetch && git rebase origin/master"
 alias gg="git status"
 alias personal="cd ~/Projects/Personal/web"
 alias work="cd ~/Projects/Work"
+alias rb="cd ~/Projects/Work/web/receipt-bank/application"
+alias footy="cd ~/Projects/Appsbakery/footyaddicts"
+alias knowledge="cd ~/Projects/Personal/web/knowledge"
+alias gmb="git fetch && git rebase $1"
 
 #rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
