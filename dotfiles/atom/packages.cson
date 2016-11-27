@@ -1,6 +1,5 @@
 packages: [
-  "atom-beautify"
-  "atomic-emacs"
+  "atom-beautify"  
   "autocomplete-paths"
   "change-case"
   "gemsource"
