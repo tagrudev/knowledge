@@ -24,5 +24,8 @@ alias footy="cd ~/Projects/Appsbakery/footyaddicts"
 alias knowledge="cd ~/Projects/Personal/web/knowledge"
 alias gmb="git fetch && git rebase $1"
 
+# Allow [ or ] whereever you want
+unsetopt nomatch
+
 #rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
