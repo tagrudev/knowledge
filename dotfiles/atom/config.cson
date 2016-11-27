@@ -1,0 +1,23 @@
+"*":
+  "atom-beautify":
+    _analyticsUserId: "fe439e3e-af12-4c3b-8cff-923666f4ea4e"
+  core:
+    disabledPackages: [
+      "atomic-emacs"
+    ]
+    packagesWithKeymapsDisabled: []
+    telemetryConsent: "limited"
+  editor:
+    fontSize: 15
+    invisibles: {}
+    preferredLineLength: 100
+    showIndentGuide: true
+  "exception-reporting":
+    userId: "498e6fb0-31dc-b342-2013-2b7b59ade24c"
+  rspec:
+    command: "zeus test"
+  welcome:
+    showOnStartup: false
+".slim.text":
+  editor:
+    preferredLineLength: 110
