@@ -16,6 +16,7 @@ packages: [
   "package-sync"
   "pigments"
   "ruby-slim"
+  "ruby-test"
   "tablr"
   "trailing-spaces"
 ]

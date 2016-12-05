@@ -28,3 +28,10 @@
   'ctrl-cmd-right': 'window:focus-pane-on-right'
   'ctrl-cmd-up': 'window:focus-pane-above'
   'ctrl-cmd-down': 'window:focus-pane-below'
+'.platform-darwin atom-workspace':
+  'cmd-shift-x': 'ruby-test:toggle'
+  'cmd-shift-y': 'ruby-test:test-all'
+  'cmd-shift-t': 'ruby-test:test-file'
+  'cmd-shift-r': 'ruby-test:test-single'
+  'cmd-shift-e': 'ruby-test:test-previous'
+  'cmd-shift-c': 'ruby-test:cancel'

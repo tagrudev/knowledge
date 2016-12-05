@@ -15,6 +15,12 @@
     forceOverwrite: true
   rspec:
     command: "zeus test"
+  "ruby-test":
+    rspecAllCommand: "zeus rspec --tty spec"
+    rspecFileCommand: "zeus rspec --tty {relative_path}"
+    rspecSingleCommand: "zeus rspec --tty {relative_path}:{line_number}"
+    shell: "zsh"
+    specFramework: "rspec"
   welcome:
     showOnStartup: false
 ".slim.text":
