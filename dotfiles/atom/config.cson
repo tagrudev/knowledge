@@ -6,7 +6,7 @@
     telemetryConsent: "limited"
   editor:
     invisibles: {}
-    preferredLineLength: 100
+    preferredLineLength: 120
     showIndentGuide: true
   "exception-reporting":
     userId: "498e6fb0-31dc-b342-2013-2b7b59ade24c"

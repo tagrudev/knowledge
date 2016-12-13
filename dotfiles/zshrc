@@ -19,9 +19,10 @@ alias gm="git fetch && git rebase origin/master"
 alias gg="git status"
 alias personal="cd ~/Projects/Personal/web"
 alias work="cd ~/Projects/Work"
-alias rb="cd ~/Projects/Work/web/receipt-bank/application"
+alias rb="cd ~/Projects/receipt-bank/application"
+alias reva="cd ~/Projects/receipt-bank/reviewer-app"
 alias footy="cd ~/Projects/Appsbakery/footyaddicts"
-alias knowledge="cd ~/Projects/Personal/web/knowledge"
+alias dotfiles="cd ~/Projects/knowledge"
 alias gmb="git fetch && git rebase $1"
 
 # Allow [ or ] whereever you want
@@ -29,3 +30,4 @@ unsetopt nomatch
 
 #rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+export PATH="/usr/local/sbin:$PATH"
