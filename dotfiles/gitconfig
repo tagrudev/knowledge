@@ -1,18 +1,23 @@
 [alias]
-    co = checkout
-    l = log --oneline --decorate --graph
+		co = checkout
+		l = log --oneline --decorate --graph
 [user]
-    email = tagrudev@gmail.com
-    name = Todor Grudev
+		email = tagrudev@gmail.com
+		name = Todor Grudev
 [github]
-    user = tagrudev
+	 user = tagrudev
 [branch]
-    autosetuprebase = always
+  	autosetuprebase = always
 [rerere]
-    enabled = true
+  	enabled = true
 [push]
-    default = upstream
+  	default = upstream
 [commit]
-    template = ~/.gitmessage
+  	template = ~/.gitmessage
+		verbose = true
 [core]
-    editor = atom --wait
+		editor = atom --wait
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
