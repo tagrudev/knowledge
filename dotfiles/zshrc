@@ -7,6 +7,8 @@ ZSH_THEME="clean"
 plugins=(git ruby rails)
 
 #path
+export EDITOR="atom"
+export HOMEBREW_GITHUB_API_TOKEN="da4ef96070947e95fc065e94b90d0b460797fee4"
 
 #oh-my-zsh
 source $ZSH/oh-my-zsh.sh
@@ -17,8 +19,8 @@ alias gm="git fetch && git rebase origin/master"
 alias gg="git status"
 alias personal="cd ~/Projects/Personal/web"
 alias work="cd ~/Projects/Work"
-alias rb="cd ~/Projects/receipt-bank/application"
-alias reva="cd ~/Projects/receipt-bank/reviewer-app"
+alias rb="cd ~/Projects/Work/receipt-bank/application"
+alias reva="cd ~/Projects/Work/receipt-bank/reviewer-app"
 alias footy="cd ~/Projects/Appsbakery/footyaddicts"
 alias dotfiles="cd ~/Projects/knowledge"
 alias gmb="git fetch && git rebase $1"
