@@ -7,8 +7,6 @@ ZSH_THEME="clean"
 plugins=(git ruby rails)
 
 #path
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/Postgres.app/Contents/Versions/latest/bin"
-export EDITOR="atom"
 
 #oh-my-zsh
 source $ZSH/oh-my-zsh.sh
@@ -30,4 +28,5 @@ unsetopt nomatch
 
 #rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-export PATH="/usr/local/sbin:$PATH"
+export EDITOR="atom"
+export PATH="/usr/local/sbin:/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"

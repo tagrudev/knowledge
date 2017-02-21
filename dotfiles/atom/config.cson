@@ -5,11 +5,16 @@
     packagesWithKeymapsDisabled: []
     telemetryConsent: "limited"
   editor:
+    fontSize: 13
     invisibles: {}
     preferredLineLength: 120
     showIndentGuide: true
   "exception-reporting":
     userId: "498e6fb0-31dc-b342-2013-2b7b59ade24c"
+  "gist-it":
+    newGistsDefaultToPrivate: true
+    openAfterCreate: true
+    userToken: "88ae6c8501b79ce25879e81f14c3884c7a64a69b"
   "package-sync":
     createOnChange: true
     forceOverwrite: true

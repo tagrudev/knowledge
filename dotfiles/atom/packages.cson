@@ -15,6 +15,7 @@ packages: [
   "multi-cursor"
   "package-sync"
   "pigments"
+  "platformio-ide-terminal"
   "ruby-slim"
   "ruby-test"
   "tablr"
