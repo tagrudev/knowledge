@@ -8,7 +8,6 @@ plugins=(git ruby rails)
 
 #path
 export EDITOR="atom"
-export HOMEBREW_GITHUB_API_TOKEN="da4ef96070947e95fc065e94b90d0b460797fee4"
 
 #oh-my-zsh
 source $ZSH/oh-my-zsh.sh
