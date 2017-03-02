@@ -29,11 +29,11 @@
         brightRed: "#c91b00"
     style: {}
   rspec:
-    command: "zeus test"
+    command: "bin/rspec"
   "ruby-test":
-    rspecAllCommand: "zeus rspec --tty spec"
-    rspecFileCommand: "zeus rspec --tty {relative_path}"
-    rspecSingleCommand: "zeus rspec --tty {relative_path}:{line_number}"
+    rspecAllCommand: "bin/rspec --tty spec"
+    rspecFileCommand: "bin/rspec --tty {relative_path}"
+    rspecSingleCommand: "bin/rspec --tty {relative_path}:{line_number}"
     shell: "zsh"
     specFramework: "rspec"
   "tree-view": {}
