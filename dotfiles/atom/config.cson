@@ -5,6 +5,7 @@
     automaticallyUpdate: false
     packagesWithKeymapsDisabled: []
     telemetryConsent: "limited"
+    titleBar: "hidden"
   editor:
     fontSize: 13
     invisibles: {}
@@ -16,6 +17,7 @@
     newGistsDefaultToPrivate: true
     openAfterCreate: true
     userToken: "88ae6c8501b79ce25879e81f14c3884c7a64a69b"
+  "linter-ui-default": {}
   "package-sync":
     createOnChange: true
     forceOverwrite: true
