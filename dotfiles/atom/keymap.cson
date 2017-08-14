@@ -28,6 +28,8 @@
   'ctrl-cmd-right': 'window:focus-pane-on-right'
   'ctrl-cmd-up': 'window:focus-pane-above'
   'ctrl-cmd-down': 'window:focus-pane-below'
+  'cmd-up': 'editor:move-line-up'
+  'cmd-down': 'editor:move-line-down'
 '.platform-darwin atom-workspace':
   'cmd-shift-x': 'ruby-test:toggle'
   'cmd-shift-y': 'ruby-test:test-all'
