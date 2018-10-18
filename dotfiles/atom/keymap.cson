@@ -31,9 +31,9 @@
   'cmd-up': 'editor:move-line-up'
   'cmd-down': 'editor:move-line-down'
 '.platform-darwin atom-workspace':
-  'cmd-shift-x': 'ruby-test:toggle'
-  'cmd-shift-y': 'ruby-test:test-all'
   'cmd-shift-t': 'ruby-test:test-file'
   'cmd-shift-r': 'ruby-test:test-single'
-  'cmd-shift-e': 'ruby-test:test-previous'
   'cmd-shift-c': 'ruby-test:cancel'
+  'cmd-shift-.': 'atom-spec-finder:toggle'
+  'cmd-shift-e': 'goto-definition:go'
+  'cmd-shift-`': 'tree-view:toggle'

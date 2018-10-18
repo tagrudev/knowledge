@@ -1,13 +1,20 @@
 "*":
   "atom-beautify":
     _analyticsUserId: "fe439e3e-af12-4c3b-8cff-923666f4ea4e"
+    general:
+      _analyticsUserId: "76c1886c-3314-4452-9799-5e88ded65008"
+  "autocomplete-paths":
+    maxFileCount: 5000
   core:
     automaticallyUpdate: false
+    disabledPackages: [
+      "autocomplete-paths"
+      "vim-mode-plus"
+    ]
     packagesWithKeymapsDisabled: []
     telemetryConsent: "limited"
     titleBar: "hidden"
   editor:
-    fontSize: 13
     invisibles: {}
     preferredLineLength: 120
     showIndentGuide: true
@@ -17,7 +24,10 @@
     newGistsDefaultToPrivate: true
     openAfterCreate: true
     userToken: "88ae6c8501b79ce25879e81f14c3884c7a64a69b"
-  "linter-ui-default": {}
+  "git-blame":
+    columnWidth: 273
+  "linter-ui-default":
+    showPanel: true
   "package-sync":
     createOnChange: true
     forceOverwrite: true
@@ -38,7 +48,8 @@
     rspecSingleCommand: "bin/rspec --tty {relative_path}:{line_number}"
     shell: "zsh"
     specFramework: "rspec"
-  "tree-view": {}
+  "tree-view":
+    hideVcsIgnoredFiles: true
   welcome:
     showOnStartup: false
 ".slim.text":
