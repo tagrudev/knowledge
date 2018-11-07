@@ -27,9 +27,11 @@
   template = ~/.gitmessage
   verbose = true
 [core]
-  editor = atom --wait
+  editor = nvim
   excludesfile = /Users/tagrudev/.gitignore_global
 [filter "lfs"]
   required = true
   clean = git-lfs clean %f
   smudge = git-lfs smudge %f
+[init]
+  templatedir = ~/.git_template

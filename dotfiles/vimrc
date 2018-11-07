@@ -1,4 +1,11 @@
+runtime macros/matchit.vim
 syntax on
+scriptencoding utf-8
+set encoding=utf-8
+set nocompatible
+if has("autocmd")
+  filetype indent plugin on
+endif
 
 call plug#begin('~/.local/share/nvim/plugged')
 Plug '/usr/local/opt/fzf'
@@ -8,6 +15,10 @@ Plug 'tpope/vim-fugitive'
 Plug 'kchmck/vim-coffee-script'
 Plug 'slim-template/vim-slim'
 Plug 'janko-m/vim-test'
+Plug 'Yggdroot/indentLine'
+Plug 'kana/vim-textobj-user'
+Plug 'nelstrom/vim-textobj-rubyblock'
+Plug 'tpope/vim-commentary'
 call plug#end()
 
 " Mapping
@@ -18,6 +29,11 @@ let maplocalleader = "\<Space>"
 let test#strategy          = "neovim"
 let g:test#preserve_screen = 1
 
+" Indent
+" let g:indentLine_showFirstIndentLevel = 1
+let g:indentLine_char = '│'
+let g:indentLine_first_char = '│'
+
 " Escaping
 inoremap jk <Esc>
 cnoremap jk <C-c>
@@ -26,14 +42,29 @@ cnoremap jk <C-c>
 nnoremap <silent> <leader>q :q<CR>
 nnoremap <silent> <leader>s :update<CR>
 nnoremap <silent> <leader>t :Files<CR>
+nnoremap <silent> <leader>b :Buffers<CR>
 nnoremap <silent> t<C-t> :TestNearest<CR>
 nnoremap <silent> t<C-f> :TestFile<CR>
 nnoremap <silent> t<C-l> :TestLast<CR>
 nnoremap <silent> t<C-v> :TestVisit<CR>
+nnoremap <Leader>c :nohlsearch<CR>
 
-" Splits and UI
 set splitright
 set splitbelow
 set termguicolors
+set tabstop=2
+set softtabstop=0
+set shiftwidth=2
+set expandtab
+set smarttab
+set number
+
+" Remove trailing spaces on save (oh yeah)
+autocmd BufWritePre * :%s/\s\+$//e
+
+" highlight tabs and trailing spaces
+set listchars=tab:\|\
+set list
 
 colorscheme quill
+
