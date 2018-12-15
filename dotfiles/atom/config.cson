@@ -1,8 +1,8 @@
 "*":
   "atom-beautify":
-    _analyticsUserId: "fe439e3e-af12-4c3b-8cff-923666f4ea4e"
+    _analyticsUserId: "example"
     general:
-      _analyticsUserId: "76c1886c-3314-4452-9799-5e88ded65008"
+      _analyticsUserId: "example"
   "autocomplete-paths":
     maxFileCount: 5000
   core:
@@ -19,11 +19,11 @@
     preferredLineLength: 120
     showIndentGuide: true
   "exception-reporting":
-    userId: "498e6fb0-31dc-b342-2013-2b7b59ade24c"
+    userId: "example"
   "gist-it":
     newGistsDefaultToPrivate: true
     openAfterCreate: true
-    userToken: "88ae6c8501b79ce25879e81f14c3884c7a64a69b"
+    userToken: "example"
   "git-blame":
     columnWidth: 273
   "linter-ui-default":
