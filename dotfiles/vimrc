@@ -11,7 +11,6 @@ call plug#begin('~/.local/share/nvim/plugged')
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'hrvladev/quill'
-Plug 'tpope/vim-fugitive'
 Plug 'kchmck/vim-coffee-script'
 Plug 'slim-template/vim-slim'
 Plug 'janko-m/vim-test'
@@ -19,6 +18,11 @@ Plug 'Yggdroot/indentLine'
 Plug 'kana/vim-textobj-user'
 Plug 'nelstrom/vim-textobj-rubyblock'
 Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-surround'
+Plug 'AndrewRadev/writable_search.vim'
+Plug 'scrooloose/nerdtree'
+Plug 'ap/vim-css-color'
 call plug#end()
 
 " Mapping
@@ -38,7 +42,7 @@ let g:indentLine_first_char = '│'
 inoremap jk <Esc>
 cnoremap jk <C-c>
 
-" Keys
+" Keys for normal mode
 nnoremap <silent> <leader>q :q<CR>
 nnoremap <silent> <leader>s :update<CR>
 nnoremap <silent> <leader>t :Files<CR>
@@ -48,6 +52,11 @@ nnoremap <silent> t<C-f> :TestFile<CR>
 nnoremap <silent> t<C-l> :TestLast<CR>
 nnoremap <silent> t<C-v> :TestVisit<CR>
 nnoremap <Leader>c :nohlsearch<CR>
+nnoremap <C-k> :m-2<CR>
+nnoremap <C-j> :m+1<CR>
+
+" Keys for visual mode
+vnoremap <Leader>f y:Ag\V<C-r>=escape(@",'/\')<CR><CR>
 
 set splitright
 set splitbelow
@@ -61,6 +70,9 @@ set number
 
 " Remove trailing spaces on save (oh yeah)
 autocmd BufWritePre * :%s/\s\+$//e
+
+" Threat jst like html
+au BufNewFile,BufRead *.ejs set filetype=html
 
 " highlight tabs and trailing spaces
 set listchars=tab:\|\

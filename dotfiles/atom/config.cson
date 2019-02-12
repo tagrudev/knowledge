@@ -15,6 +15,7 @@
     telemetryConsent: "limited"
     titleBar: "hidden"
   editor:
+    fontSize: 13
     invisibles: {}
     preferredLineLength: 120
     showIndentGuide: true
@@ -25,7 +26,7 @@
     openAfterCreate: true
     userToken: "example"
   "git-blame":
-    columnWidth: 273
+    columnWidth: 299
   "linter-ui-default":
     showPanel: true
   "package-sync":
