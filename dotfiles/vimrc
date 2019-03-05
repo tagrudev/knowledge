@@ -3,6 +3,7 @@ syntax on
 scriptencoding utf-8
 set encoding=utf-8
 set nocompatible
+set autoread
 if has("autocmd")
   filetype indent plugin on
 endif
@@ -23,6 +24,7 @@ Plug 'tpope/vim-surround'
 Plug 'AndrewRadev/writable_search.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'ap/vim-css-color'
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
 call plug#end()
 
 " Mapping
@@ -79,4 +81,5 @@ set listchars=tab:\|\
 set list
 
 colorscheme quill
+highlight Pmenu ctermfg=2 ctermbg=3 guifg=#ffffff guibg=#323742
 
