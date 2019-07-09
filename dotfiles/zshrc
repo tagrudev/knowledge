@@ -24,6 +24,7 @@ alias work="cd ~/Projects/Work"
 alias rb="cd ~/Projects/Work/receipt-bank/application"
 alias reva="cd ~/Projects/Work/receipt-bank/reviewer-app"
 alias footy="cd ~/Projects/Appsbakery/footyaddicts"
+alias muscle="cd ~/Projects/outmuscleme"
 alias dotfiles="cd ~/Projects/knowledge"
 alias gmb="git fetch && git rebase $1"
 alias wip="git add . && git commit -nm 'wip'"
@@ -45,3 +46,4 @@ fi
 
 export VIMCONFIG=~/.config/nvim
 export VIMDATA=~/.local/share/nvim
+export SSH_PRIVATE_KEY=~/.ssh/kube-sshkey

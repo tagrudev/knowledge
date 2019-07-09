@@ -24,6 +24,7 @@ Plug 'tpope/vim-surround'
 Plug 'AndrewRadev/writable_search.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'ap/vim-css-color'
+Plug 'easymotion/vim-easymotion'
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
 call plug#end()
 
@@ -56,6 +57,7 @@ nnoremap <silent> t<C-v> :TestVisit<CR>
 nnoremap <Leader>c :nohlsearch<CR>
 nnoremap <C-k> :m-2<CR>
 nnoremap <C-j> :m+1<CR>
+nnoremap <C-n> :tabNext<CR>
 
 " Keys for visual mode
 vnoremap <Leader>f y:Ag\V<C-r>=escape(@",'/\')<CR><CR>
