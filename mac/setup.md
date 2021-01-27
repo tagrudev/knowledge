@@ -18,6 +18,7 @@ brew install redis
 brew install rabbitmq
 brew install node
 brew install yarn
+brew install the_silver_searcher
 brew cask install chromedriver
 brew cask install wkhtmltopdf
 

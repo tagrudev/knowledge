@@ -26,6 +26,14 @@ Plug 'scrooloose/nerdtree'
 Plug 'ap/vim-css-color'
 Plug 'easymotion/vim-easymotion'
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
+Plug 'pangloss/vim-javascript'
+Plug 'leafgarland/typescript-vim'
+Plug 'maxmellon/vim-jsx-pretty'
+Plug 'pangloss/vim-javascript'
+Plug 'leafgarland/typescript-vim'
+Plug 'maxmellon/vim-jsx-pretty'
+Plug 'lmeijvogel/vim-yaml-helper'
+" Plug 'prettier/vim-prettier', { 'do': 'yarn install', 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
 call plug#end()
 
 " Mapping
@@ -48,7 +56,8 @@ cnoremap jk <C-c>
 " Keys for normal mode
 nnoremap <silent> <leader>q :q<CR>
 nnoremap <silent> <leader>s :update<CR>
-nnoremap <silent> <leader>t :Files<CR>
+nnoremap <silent> <leader>t :GFiles<CR>
+nnoremap <silent> <leader>g :Files<CR>
 nnoremap <silent> <leader>b :Buffers<CR>
 nnoremap <silent> t<C-t> :TestNearest<CR>
 nnoremap <silent> t<C-f> :TestFile<CR>
@@ -84,4 +93,7 @@ set list
 
 colorscheme quill
 highlight Pmenu ctermfg=2 ctermbg=3 guifg=#ffffff guibg=#323742
+let g:prettier#autoformat = 0
+" autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync
 
+let g:fzf_layout = { 'down': '~40%' }
