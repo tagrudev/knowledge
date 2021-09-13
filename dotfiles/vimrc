@@ -128,3 +128,9 @@ let g:ale_set_balloons = 1
 let g:ale_ruby_rubocop_executable = 'bundle'
 highlight clear SignColumn
 let g:airline_theme='onedark'
+
+" fold experiments
+set foldmethod=indent
+set foldnestmax=10
+set nofoldenable
+set foldlevel=2
