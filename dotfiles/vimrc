@@ -20,6 +20,7 @@ Plug 'kana/vim-textobj-user'
 Plug 'nelstrom/vim-textobj-rubyblock'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-rhubarb'
 Plug 'tpope/vim-surround'
 Plug 'AndrewRadev/writable_search.vim'
 Plug 'scrooloose/nerdtree'
@@ -36,6 +37,7 @@ Plug 'lmeijvogel/vim-yaml-helper'
 Plug 'dense-analysis/ale'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 " Plug 'prettier/vim-prettier', { 'do': 'yarn install', 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
 call plug#end()
 
@@ -62,6 +64,7 @@ nnoremap <silent> <leader>s :update<CR>
 nnoremap <silent> <leader>t :GFiles<CR>
 nnoremap <silent> <leader>g :Files<CR>
 nnoremap <silent> <leader>b :Buffers<CR>
+nnoremap <silent> <leader>l :NERDTreeFind<CR>
 nnoremap <silent> t<C-t> :TestNearest<CR>
 nnoremap <silent> t<C-f> :TestFile<CR>
 nnoremap <silent> t<C-l> :TestLast<CR>
@@ -93,6 +96,9 @@ au BufNewFile,BufRead *.ejs set filetype=html
 " highlight tabs and trailing spaces
 set listchars=tab:\|\
 set list
+
+" highlights
+set cursorline
 
 colorscheme quill
 highlight Pmenu ctermfg=2 ctermbg=3 guifg=#ffffff guibg=#323742
@@ -134,3 +140,8 @@ set foldmethod=indent
 set foldnestmax=10
 set nofoldenable
 set foldlevel=2
+
+" spell check
+autocmd BufRead,BufNewFile *.md setlocal spell
+autocmd FileType gitcommit setlocal spell
+
