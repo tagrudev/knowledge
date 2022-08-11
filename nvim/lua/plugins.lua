@@ -25,7 +25,6 @@ packer.startup(function(use)
   use 'scrooloose/nerdtree'
   use 'ap/vim-css-color'
   use 'easymotion/vim-easymotion'
-  use 'Valloric/YouCompleteMe'
   use 'pangloss/vim-javascript'
   use 'leafgarland/typescript-vim'
   use 'maxmellon/vim-jsx-pretty'
