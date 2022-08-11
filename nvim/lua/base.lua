@@ -23,6 +23,12 @@ vim.o.number = true
 vim.g.indentLine_char = '│'
 vim.g.ndentLine_first_char = '│'
 
+-- Ouhh tabs to spaces
+vim.cmd[[
+  set expandtab
+  set smarttab
+]]
+
 -- Remove trailing white spaces
 vim.cmd [[autocmd BufWritePre * :%s/\s\+$//e]]
 
