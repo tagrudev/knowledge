@@ -15,19 +15,15 @@ vim.opt.listchars= [[tab:\|\]]
 vim.opt.list = true
 vim.opt.foldmethod = 'indent'
 vim.opt.foldnestmax = 10
-vim.opt.foldlevel = 2
-
-vim.o.autoread = true
-vim.o.number = true
+vim.opt.foldlevel = 8
+vim.opt.updatetime = 300
+vim.opt.autoread = true
+vim.opt.number = true
+vim.opt.expandtab = true
+vim.opt.smarttab = true
 
 vim.g.indentLine_char = '│'
 vim.g.ndentLine_first_char = '│'
-
--- Ouhh tabs to spaces
-vim.cmd[[
-  set expandtab
-  set smarttab
-]]
 
 -- Remove trailing white spaces
 vim.cmd [[autocmd BufWritePre * :%s/\s\+$//e]]

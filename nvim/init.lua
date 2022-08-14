@@ -1,4 +1,7 @@
-require('base')
-require('styles')
-require('mapping')
-require('plugins')
+require 'tagrudev.base'
+require 'tagrudev.styles'
+require 'tagrudev.mapping'
+require 'tagrudev.plugins'
+require 'tagrudev.lsp'
+require 'tagrudev.cmp'
+require 'tagrudev.null-ls'
