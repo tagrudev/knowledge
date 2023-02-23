@@ -19,7 +19,7 @@ map('n', '<leader>c', ':nohlsearch<CR>', silentnoremap)
 map('v', '<leader>f', [[y:Ag\V<C-r>=escape(@",'/\')<CR><CR>]], silentnoremap)
 
 -- Move up and down
-map('n', '<C-k>', ':m-2<CR>', silentnoremap)
+map('n', '<C-k>', ':m-1<CR>', silentnoremap)
 map('n', '<C-j>', ':m+1<CR>', silentnoremap)
 
 -- Do not put deleted item in yank
