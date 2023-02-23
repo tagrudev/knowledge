@@ -4,14 +4,13 @@ export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="clean"
 
 #plugins
-plugins=(ruby rails)
+plugins=(ruby)
 
 #path
 export EDITOR="nvim"
 
 #oh-my-zsh
 source $ZSH/oh-my-zsh.sh
-source ~/.bin/tmuxinator.zsh
 
 # aliases
 alias gm="git fetch && git rebase origin/master"
@@ -21,22 +20,36 @@ alias gl="git l"
 alias gbr="git branch | fzf | xargs git co"
 alias personal="cd ~/Projects/Personal/web"
 alias work="cd ~/Projects/Work"
-alias rb="cd ~/Projects/Work/receipt-bank/application"
-alias reva="cd ~/Projects/Work/receipt-bank/reviewer-app"
-alias footy="cd ~/Projects/Appsbakery/footyaddicts"
-alias muscle="cd ~/Projects/outmuscleme"
-alias dotfiles="cd ~/Projects/knowledge"
+alias rb="cd ~/Projects/Work/application"
+alias rbd="cd ~/Projects/Work/android-app-rewrite"
+alias druid="cd ~/Projects/Work/android-app-rewrite"
+alias mandrill="cd ~/Projects/Work/mandrill-templates"
+alias footy="cd ~/Projects/Personal/footyaddicts"
+alias book="cd ~/Projects/Personal/bookings"
+alias muscle="cd ~/Projects/Personal/outmuscleme"
+alias amuscle="cd ~/Projects/Personal/outmuscleme-android"
+alias eatright="cd ~/Projects/Personal/eatright"
+alias app="cd ~/Projects/Personal/OutmuscleMeApp"
+alias dotfiles="cd ~/Projects/Personal/knowledge"
 alias gmb="git fetch && git rebase $1"
 alias wip="git add . && git commit -nm 'wip'"
+alias str="git add db/structure.sql && git commit -m 'structure.sql'"
 alias vim="nvim"
 alias vi="nvim"
+alias kubedemo='kubectl --kubeconfig=/Users/tagrudev/.kube/demo_cluster.yml'
+alias kubestaging='kubectl --kubeconfig=/Users/tagrudev/.kube/staging_cluster.yml'
+alias kubeproduction='kubectl --kubeconfig=/Users/tagrudev/.kube/production_cluster.yml'
+alias kubeinfrastructure='kubectl --kubeconfig=/Users/tagrudev/.kube/infrastructure_cluster.yml'
+alias s="kitty +kitten ssh"
+alias parallel="RAILS_ENV=test rake parallel:prepare parallel:spec && bundle exec rspec --only-failures"
+alias rerun-failed-specs="be rspec --only-failures"
 
 # Allow [ or ] whereever you want
 unsetopt nomatch
 
 #rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-export PATH="/usr/local/sbin:/usr/local/bin/e:/Applications/Postgres.app/Contents/Versions/latest/bin:/usr/local/share/npm/bin:$PATH"
+export PATH="/usr/local/sbin:/usr/local/opt/postgresql@12/bin:/usr/local/bin/e:/Applications/Postgres.app/Contents/Versions/latest/bin:/usr/local/share/npm/bin:$PATH"
 
 if type nvim > /dev/null 2>&1; then
   alias vim='nvim'
@@ -47,3 +60,48 @@ fi
 export VIMCONFIG=~/.config/nvim
 export VIMDATA=~/.local/share/nvim
 export SSH_PRIVATE_KEY=~/.ssh/kube-sshkey
+export ANDROID_HOME=/Users/tagrudev/Library/Android/sdk
+export HOMEBREW_NO_AUTO_UPDATE=1
+export IRB_USE_AUTOCOMPLETE=true
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+export PATH="/usr/local/opt/postgresql@11/bin:$PATH"
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+
+# hook direnv
+eval "$(direnv hook zsh)"
+
+# Jenv
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
+
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# Nvm support
+# place this after nvm initialization!
+# autoload -U add-zsh-hook
+# load-nvmrc() {
+#   local node_version="$(nvm version)"
+#   local nvmrc_path="$(nvm_find_nvmrc)"
+
+#   if [ -n "$nvmrc_path" ]; then
+#     local nvmrc_node_version=$(nvm version "$(cat "${nvmrc_path}")")
+
+#     if [ "$nvmrc_node_version" = "N/A" ]; then
+#       nvm install
+#     elif [ "$nvmrc_node_version" != "$node_version" ]; then
+#       nvm use
+#     fi
+#   elif [ "$node_version" != "$(nvm version default)" ]; then
+#     echo "Reverting to nvm default version"
+#     nvm use default
+#   fi
+# }
+# add-zsh-hook chpwd load-nvmrc
+# load-nvmrc
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
