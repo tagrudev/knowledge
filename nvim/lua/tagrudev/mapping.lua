@@ -8,6 +8,7 @@ local silentnoremap = { noremap = true, silent = true }
 -- My maps - i - insert, n - normal, ...
 map('i', 'jk', '<Esc>', silentnoremap)
 map('c', 'jk', '<C-c>', silentnoremap)
+map('n', '<leader>e', ':lua vim.diagnostic.open_float({"line"})<CR>', silentnoremap)
 map('n', '<C-n>', ':tabNext<CR>', silentnoremap)
 map('n', '<leader>q', ':q<CR>', silentnoremap)
 map('n', '<leader>s', ':update<CR>', silentnoremap)
@@ -19,7 +20,7 @@ map('n', '<leader>c', ':nohlsearch<CR>', silentnoremap)
 map('v', '<leader>f', [[y:Ag\V<C-r>=escape(@",'/\')<CR><CR>]], silentnoremap)
 
 -- Move up and down
-map('n', '<C-k>', ':m-1<CR>', silentnoremap)
+map('n', '<C-k>', ':m-2<CR>', silentnoremap)
 map('n', '<C-j>', ':m+1<CR>', silentnoremap)
 
 -- Do not put deleted item in yank

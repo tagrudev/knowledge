@@ -40,7 +40,8 @@ packer.init {
 
 return packer.startup(function(use)
   use 'wbthomason/packer.nvim'
-  use '/usr/local/opt/fzf' -- Fzf executable
+  -- use '/Users/tagrudev/.fzf/bin'
+  use { "junegunn/fzf", run = ":call fzf#install()" }
   use 'junegunn/fzf.vim' -- Fzf interface
   use 'hrvladev/quill' -- Theme
 

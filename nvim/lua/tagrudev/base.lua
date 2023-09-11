@@ -35,4 +35,3 @@ vim.cmd [[autocmd FileType gitcommit setlocal spell]]
 
 -- Yank == Copy
 vim.opt.clipboard:append { 'unnamedplus' }
-

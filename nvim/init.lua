@@ -1,7 +1,7 @@
 require 'tagrudev.base'
+require 'tagrudev.plugins'
 require 'tagrudev.styles'
 require 'tagrudev.mapping'
-require 'tagrudev.plugins'
 require 'tagrudev.lsp'
 require 'tagrudev.cmp'
 require 'tagrudev.null-ls'
